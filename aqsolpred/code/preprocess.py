@@ -62,10 +62,14 @@ def preprocess_train(train_set_df,test_set_df):
     remove_threshold=20
     drop_cols = unfiltered_train_df.columns[(unfiltered_train_df == 0).sum() > (unfiltered_train_df.shape[0]-remove_threshold) ]
     unfiltered_train_df.drop(drop_cols, axis = 1, inplace = True) 
-    
+
+    ## parte modificada
     # Convert values to numeric
-    train_df = unfiltered_train_df.apply(pd.to_numeric)
-    
+    train_df = unfiltered_train_df.apply(pd.to_numeric, errors='coerce')
+    # agregado para eliminar descriptores que no se pudieron calcular y que generaron nan values
+    train_df = train_df.dropna(axis=1, how='any')
+    ## parte modificada
+
     #element count vector
     all_elements_list = utilities.create_element_list(train_formula_list)    
     element_vector_df=utilities.create_oneHotVector(train_formula_list,all_elements_list)
