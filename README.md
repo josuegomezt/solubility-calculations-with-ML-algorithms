@@ -1,6 +1,15 @@
 # solubility-calculations-with-ML-algorithms
 Prediction of logS values for different molecules by using Machine Learning algorithms
 
+
+## Directory Descriptions
+
+- **aqsolpred/**: Directory for the aqsolpred model and its modules (Sorkun et al., iScience 24, 101961, January 22, 2021. DOI: 10.1016/j.isci.2020.101961)
+  - Contains the implementation of the aqsolpred model and associated modules for solubility prediction.
+
+- **initial_benchmarking.ipynb**: Contains the initial benchmarking of the project, where 42 ML regressors and an MLP regressor are trained to compare their performance. Insights are proposed based on various sources.
+
+
 Project Organization
 .
 ├── aqsolpred/                            : Directory for the aqsolpred model and its modules (Sorkun et al., iScience 24, 101961, January 22, 2021. DOI: 10.1016/j.isci.2020.101961)
