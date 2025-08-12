@@ -1,5 +1,5 @@
 # solubility-calculations-with-ML-algorithms
-Prediction of logS Values for Different Molecules Using Machine Learning Algorithms, and Enhancement of Various Solubility Prediction Models Through Ensemble Learning Methods, Quantum-Chemical Molecular Descriptors, and Data Augmentation Techniques to Improve the Feature Space
+Prediction of logS Values for Different Molecules Using Machine Learning Algorithms, and Enhancement of Various Solubility Prediction Models Through Ensemble Learning Methods, Quantum-Chemical Molecular Descriptors, and Advanced Data Augmentation Techniques to Improve the Feature Space
 
 ## Directory Descriptions
 
@@ -7,6 +7,8 @@ Prediction of logS Values for Different Molecules Using Machine Learning Algorit
   - Contains the implementation of the aqsolpred model and associated modules for solubility prediction.
 
 - **initial_benchmarking.ipynb**: Contains the initial benchmarking of the project, where 42 ML regressors and an MLP regressor are trained to compare their performance. Insights are proposed based on various sources.
+
+- **WGAN_implementation.ipynb**: Implementation of a Wasserstein Generative Adversarial Network (WGAN) with Gradient Penalty for data augmentation (physicochemical descriptors and associated solubility values as logS) and training of the ensemble model proposed in the AqSolPred paper using the augmented dataset (but without the subsequent LASSO-based descriptor selection proposed in that work). This pipeline produces better predictions than the Multi-Layer Perceptron implementation in `initial_benchmarking.ipynb`, but does not surpass the performance of the LGBM Regressor. No chemical structural information is involved here—only physicochemical descriptors associated with the molecules during the training stage. This will be improved in future pipelines.
 
 ![Copy of = NC](https://github.com/user-attachments/assets/4e1977c5-9b8b-41a3-ab6c-1036a47cc86d)
 
