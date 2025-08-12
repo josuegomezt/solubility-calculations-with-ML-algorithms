@@ -1,5 +1,5 @@
 # solubility-calculations-with-ML-algorithms
-Prediction of logS Values for Different Molecules Using Machine Learning Algorithms, and Enhancement of Various Solubility Prediction Models Through Ensemble Learning Methods, Quantum-Chemical Molecular Descriptors, and Advanced Data Augmentation Techniques to Improve the Feature Space
+Prediction of logS Values for Different Molecules Using Machine Learning Algorithms, and Enhancement of Various Solubility Prediction Models Through Ensemble Learning Methods, Quantum-Chemical Molecular Descriptors, and Data Augmentation Techniques to Improve the Feature Space
 
 ## Directory Descriptions
 
